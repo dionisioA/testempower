@@ -1,0 +1,160 @@
+POST http://localhost:3000/ofertas
+Content-Type: application/json
+
+{
+    "jobId":1
+    ,"companyId":1
+    ,"startDate":"2022-10-16T18:25:43-05:00"
+    ,"finalDate":"2022-12-16T18:00:00-00:00"
+    ,"statusId":2
+    ,"privacyId":1
+    ,"modalityId":1
+    ,"timeId":1
+}
+
+###
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+    "userEmail":"rh@empower.soy"
+    ,"password":"reclutamientoEmpower2022"
+}
+
+###
+POST http://localhost:3000/test
+Content-Type: application/json
+{
+    "Authorization":"Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEsInVzZXJFbWFpbCI6InJoQGVtcG93ZXIuc295IiwicGFzc3dvcmQiOiJyZWNsdXRhbWllbnRvRW1wb3dlcjIwMjIifQ.mgtTmaeP3jfgy_PiDcP5d3TsTpku8LSKAf8AuuKqzh4"
+}
+
+###
+
+###
+GET http://localhost:3000/ofertas
+
+###
+GET http://localhost:3000/ofertas/1
+
+###
+GET http://localhost:3000/idiomas/niveles
+
+
+###
+GET http://localhost:3000/idiomas
+
+
+###
+GET http://localhost:3000/monedas
+
+###
+GET http://localhost:3000/monedas/2
+
+###
+GET http://localhost:3000/monedas/pago
+
+###
+GET http://localhost:3000/grado/
+
+###
+GET http://localhost:3000/grado/3
+
+###
+GET http://localhost:3000/empresas
+
+###
+GET http://localhost:3000/competencias
+
+###
+GET http://localhost:3000/competencias/nivel
+
+###
+GET http://localhost:3000/competencias/4
+
+###
+GET http://localhost:3000/competencias/nivel/2
+
+###
+GET http://localhost:3000/puestos
+
+###
+GET http://localhost:3000/puestos/4
+
+###
+GET http://localhost:3000/jornada
+
+###
+GET http://localhost:3000/jornada/2
+
+###
+GET http://localhost:3000/jornada/2
+
+###
+GET http://localhost:3000/idiomas/niveles
+
+###
+GET http://localhost:3000/idiomas
+
+###
+GET http://localhost:3000/ofertas
+
+###
+GET http://localhost:3000/ofertas/6
+
+###
+GET http://localhost:3000/sectores
+
+###
+GET http://localhost:3000/modalidad
+
+###
+GET http://localhost:3000/modalidad/2
+
+###
+GET http://localhost:3000/postulantesActivos
+
+###
+PATCH  http://localhost:3000/ofertas/estado
+Content-Type: application/json
+
+{
+    "offerId":2,
+    "statusId":4
+}
+
+###
+POST http://localhost:3000/empresas
+Content-Type: application/json
+
+{
+    "name":"test company 7",
+    "statusId": 1,
+    "companyScore": 0,
+    "sectorId":1
+}
+
+###
+POST http://localhost:3000/empresas/sucursales
+Content-Type: application/json
+
+{
+    "lat":"-65",
+    "lng": "87",
+    "branchName": "test branch",
+    "mainBranch": "1",
+    "description": "new branch for new company",
+    "companyId":30
+}
+
+###
+POST http://localhost:3000/empresas/info
+Content-Type: application/json
+
+{
+    "avatar":"avatar url",
+    "description": "company description",
+    "cover": "cover url",
+    "userAgreement": 1,
+    "datause": 1,
+    "companyId":30
+}
